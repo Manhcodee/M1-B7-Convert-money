@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert money</title>
+</head>
+<body>
+<style>
+    .main {
+        width: 700px;
+        height: 200px;
+        border: 1px solid #ccc;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .text-head {
+        display: flex;
+        justify-content: space-around;
+        transform: translateX(10px);
+    }
+
+    .input-money {
+        display: flex;
+        justify-content: space-around;
+    }
+    button {
+        margin-top: 50px;
+        height: 50px;
+        width: 200px;
+        margin-left: 250px;
+    }
+
+    .text {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    select {
+        width: 200px;
+        height: 30px;
+    }
+    .result {
+        color: blue;
+        font-size: 20px;
+        height: 25px;
+        width: 350px;
+    }
+</style>
+
+<div class="main">
+    <div class="text-head">
+        <span class = "text">Amount</span>
+        <span class="text">Form Currency</span>
+        <span class="text">To Currency</span>
+    </div>
+    <div class="input-money">
+        <input class = "getMoney" type="text" placeholder="input money">
+        <select class = "name">
+            <option class="VND">VND</option>
+            <option class="USD">USD</option>
+        </select>
+        <select class = "nameTo">
+            <option class="VND">VND</option>
+            <option class="USD">USD</option>
+        </select>
+    </div>
+    <p class="result">Result</p>
+    <button onclick="covert()">Covert</button>
+</div>
+<script src = "./mian.js"></script>
+</body>
+</html>
